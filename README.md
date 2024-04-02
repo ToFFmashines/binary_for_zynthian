@@ -24,6 +24,6 @@ cmake --build ignore/s13clang --config Release --parallel 3
 sudo cmake --install ignore/s13clang
 ```
 
-Where the files were subsequently located can be read from the install.log
+Where the files were subsequently located can be read from the [src/Surge XT/install.log](https://github.com/ToFFmashines/binary_for_zynthian/blob/main/src/Surge%20XT/install.log).
 
 ![Screenshot of GUI with Surge XT About.. screen](surge_xt_gui_01.png)
