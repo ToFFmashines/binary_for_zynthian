@@ -50,3 +50,16 @@ make
 make install
 ```
 The final binaries are in [src/GeonKick/lv2](https://github.com/ToFFmashines/binary_for_zynthian/tree/a3f04e10c481957ee0a4e2d1f868623f21f52631/src/GeonKick/lv2)
+
+## avldrums.lv2 - AVLinux Drumkits
+
+The procedure was as follows:
+```
+git clone https://github.com/x42/avldrums.lv2.git
+cd avldrums.lv2
+git submodule update --init --recursive
+make submodules
+make
+sudo make install PREFIX=/usr
+```
+The complete contents of the [build directory are here](https://github.com/ToFFmashines/binary_for_zynthian/tree/1a9a7478aa9769e8bed4a2c8a7f24ee7c060e6fd/src/avldrums.lv2). Plus a [log from the installation](https://github.com/ToFFmashines/binary_for_zynthian/blob/1a9a7478aa9769e8bed4a2c8a7f24ee7c060e6fd/src/avldrums.lv2/install_avldrums.log).
