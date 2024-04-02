@@ -1,0 +1,10 @@
+Version: 0.7.2 -> 0 7 2 
+LV2 Version: 1796 0
+test -d .git -a .gitmodules -a -f Makefile.git && make -f Makefile.git submodule_check
+make[1]: Entering directory '/root/src/avldrums.lv2'
+Synchronizing submodule url for 'robtk'
+make[1]: Leaving directory '/root/src/avldrums.lv2'
+install -d /usr/lib/lv2/avldrums.lv2
+install -m644 build/manifest.ttl build/avldrums.ttl build/*.sf2 /usr/lib/lv2/avldrums.lv2
+install -m755 build/avldrums.so /usr/lib/lv2/avldrums.lv2
+install -m755 build/avldrumsUI_gl.so /usr/lib/lv2/avldrums.lv2
