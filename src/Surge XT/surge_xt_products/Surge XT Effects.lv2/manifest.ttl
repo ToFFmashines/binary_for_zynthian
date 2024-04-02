@@ -1,0 +1,23 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<https://surge-synth-team.org//plugins/Surge_XT_Effects>
+	a lv2:Plugin ;
+	lv2:binary <libSurge%20XT%20Effects.so> ;
+	rdfs:seeAlso <dsp.ttl> .
+
+<https://surge-synth-team.org//plugins/Surge_XT_Effects:UI>
+	a ui:X11UI ;
+	lv2:binary <libSurge%20XT%20Effects.so> ;
+	rdfs:seeAlso <ui.ttl> .
+
+<https://surge-synth-team.org//plugins/Surge_XT_Effects:preset1>
+	a pset:Preset ;
+	lv2:appliesTo <https://surge-synth-team.org//plugins/Surge_XT_Effects> ;
+	rdfs:label "Default" ;
+	state:state [ <https://surge-synth-team.org//plugins/Surge_XT_Effects:Program> "0"^^xsd:int ; ] .
+

@@ -1,0 +1,290 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix bufs:  <http://lv2plug.in/ns/ext/buf-size#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix opts:  <http://lv2plug.in/ns/ext/options#> .
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix patch: <http://lv2plug.in/ns/ext/patch#> .
+@prefix pg:    <http://lv2plug.in/ns/ext/port-groups#> .
+@prefix plug:  <https://surge-synth-team.org//plugins/Surge_XT_Effects:> .
+@prefix pprop: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rsz:   <http://lv2plug.in/ns/ext/resize-port#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix time:  <http://lv2plug.in/ns/ext/time#> .
+@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+plug:fx_parm_0
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 0" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_1
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 1" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_2
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 2" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_3
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 3" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_4
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 4" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_5
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 5" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_6
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 6" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_7
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 7" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_8
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 8" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_9
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 9" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_10
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 10" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fx_parm_11
+	a lv2:Parameter ;
+	rdfs:label "FX Parameter 11" ;
+	rdfs:range atom:Float ;
+	lv2:default 0 ;
+	lv2:minimum 0 ;
+	lv2:maximum 1 .
+
+plug:fxtype
+	a lv2:Parameter ;
+	rdfs:label "FX Type" ;
+	rdfs:range atom:Float ;
+	lv2:default 1 ;
+	lv2:minimum 1 ;
+	lv2:maximum 29 .
+
+plug:input_group_1
+	a pg:InputGroup ;
+	lv2:name "Input" ;
+	lv2:symbol "input_group_1" .
+
+plug:input_group_2
+	a pg:InputGroup ;
+	lv2:name "Sidechain" ;
+	lv2:symbol "input_group_2" .
+
+plug:output_group_1
+	a pg:OutputGroup ;
+	lv2:name "Output" ;
+	lv2:symbol "output_group_1" .
+
+<https://surge-synth-team.org//plugins/Surge_XT_Effects>
+	ui:ui <https://surge-synth-team.org//plugins/Surge_XT_Effects:UI> ;
+	a lv2:Plugin ;
+	doap:name "Surge XT Effects" ;
+	doap:description "Surge XT Effects" ;
+	lv2:minorVersion 3 ;
+	lv2:microVersion 2 ;
+	doap:maintainer [
+		a foaf:Person ;
+		foaf:name "Surge Synth Team" ;
+		foaf:homepage <https://surge-synth-team.org/> ;
+		foaf:mbox <> ;
+	] ;
+	doap:release [
+		a doap:Version ;
+		doap:revision "1.3.2" ;
+	] ;
+	lv2:optionalFeature
+		lv2:hardRTCapable ;
+	lv2:extensionData
+		state:interface ;
+	lv2:requiredFeature
+		urid:map ,
+		opts:options ,
+		bufs:boundedBlockLength ;
+	pg:mainInput plug:input_group_1 ;
+	pg:mainOutput plug:output_group_1 ;
+	patch:writable
+		plug:fx_parm_0 ,
+		plug:fx_parm_1 ,
+		plug:fx_parm_2 ,
+		plug:fx_parm_3 ,
+		plug:fx_parm_4 ,
+		plug:fx_parm_5 ,
+		plug:fx_parm_6 ,
+		plug:fx_parm_7 ,
+		plug:fx_parm_8 ,
+		plug:fx_parm_9 ,
+		plug:fx_parm_10 ,
+		plug:fx_parm_11 ,
+		plug:fxtype ;
+	patch:readable
+		plug:fx_parm_0 ,
+		plug:fx_parm_1 ,
+		plug:fx_parm_2 ,
+		plug:fx_parm_3 ,
+		plug:fx_parm_4 ,
+		plug:fx_parm_5 ,
+		plug:fx_parm_6 ,
+		plug:fx_parm_7 ,
+		plug:fx_parm_8 ,
+		plug:fx_parm_9 ,
+		plug:fx_parm_10 ,
+		plug:fx_parm_11 ,
+		plug:fxtype ;
+	lv2:port [
+		a lv2:InputPort , lv2:AudioPort ;
+		lv2:index 0 ;
+		lv2:symbol "audio_in_1" ;
+		lv2:name "Audio In 1" ;
+		pg:group plug:input_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#left> ;
+	] , [
+		a lv2:InputPort , lv2:AudioPort ;
+		lv2:index 1 ;
+		lv2:symbol "audio_in_2" ;
+		lv2:name "Audio In 2" ;
+		pg:group plug:input_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#right> ;
+	] , [
+		a lv2:InputPort , lv2:AudioPort ;
+		lv2:index 2 ;
+		lv2:symbol "audio_in_3" ;
+		lv2:name "Audio In 3" ;
+		pg:group plug:input_group_2 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#left> ;
+	] , [
+		a lv2:InputPort , lv2:AudioPort ;
+		lv2:index 3 ;
+		lv2:symbol "audio_in_4" ;
+		lv2:name "Audio In 4" ;
+		pg:group plug:input_group_2 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#right> ;
+	] , [
+		a lv2:OutputPort , lv2:AudioPort ;
+		lv2:index 4 ;
+		lv2:symbol "audio_out_1" ;
+		lv2:name "Audio Out 1" ;
+		pg:group plug:output_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#left> ;
+	] , [
+		a lv2:OutputPort , lv2:AudioPort ;
+		lv2:index 5 ;
+		lv2:symbol "audio_out_2" ;
+		lv2:name "Audio Out 2" ;
+		pg:group plug:output_group_1 ;
+		lv2:designation <http://lv2plug.in/ns/ext/port-groups#right> ;
+	] , [
+		a lv2:InputPort , atom:AtomPort ;
+		rsz:minimumSize 9128 ;
+		atom:bufferType atom:Sequence ;
+		atom:supports
+			patch:Message ,
+			time:Position ;
+		lv2:designation lv2:control ;
+		lv2:index 6 ;
+		lv2:symbol "in" ;
+		lv2:name "In" ;
+	] , [
+		a lv2:OutputPort , atom:AtomPort ;
+		rsz:minimumSize 9128 ;
+		atom:bufferType atom:Sequence ;
+		atom:supports
+			patch:Message ;
+		lv2:designation lv2:control ;
+		lv2:index 7 ;
+		lv2:symbol "out" ;
+		lv2:name "Out" ;
+	] , [
+		a lv2:OutputPort , lv2:ControlPort ;
+		lv2:designation lv2:latency ;
+		lv2:symbol "latency" ;
+		lv2:name "Latency" ;
+		lv2:index 8 ;
+		lv2:portProperty lv2:reportsLatency , lv2:integer , lv2:connectionOptional , pprop:notOnGUI ;
+		units:unit units:frame ;
+	] , [
+		a lv2:InputPort , lv2:ControlPort ;
+		lv2:designation lv2:freeWheeling ;
+		lv2:symbol "freeWheeling" ;
+		lv2:name "Free Wheeling" ;
+		lv2:default 0.0 ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+		lv2:index 9 ;
+		lv2:portProperty lv2:toggled , lv2:connectionOptional , pprop:notOnGUI ;
+	] , [
+		a lv2:InputPort , lv2:ControlPort ;
+		lv2:designation lv2:enabled ;
+		lv2:symbol "enabled" ;
+		lv2:name "Enabled" ;
+		lv2:default 1.0 ;
+		lv2:minimum 0.0 ;
+		lv2:maximum 1.0 ;
+		lv2:index 10 ;
+		lv2:portProperty lv2:toggled , lv2:connectionOptional , pprop:notOnGUI ;
+	] ;
+	opts:supportedOption
+		bufs:maxBlockLength .
