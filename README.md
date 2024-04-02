@@ -27,3 +27,26 @@ sudo cmake --install ignore/s13clang
 Where the files were subsequently located can be read from the [src/Surge XT/install.log](https://github.com/ToFFmashines/binary_for_zynthian/blob/main/src/Surge%20XT/install.log).
 
 ![Screenshot of GUI with Surge XT About.. screen](surge_xt_gui_01.png)
+
+## GeonKick Installation Notes
+
+First the dependencies, I removed `libjack-dev` from the recommended ones:
+```
+apt-get install build-essential cmake libsndfile-dev rapidjson-dev lv2-dev libcairo2-dev
+```
+Clone the Geonkick code repository:
+```
+cd /root/src
+git clone https://github.com/Geonkick-Synthesizer/geonkick.git
+cd geonkick
+git submodule update --init --recursive
+```
+Compile and install:
+```
+mkdir geonkick/build
+cd geonkick/build
+cmake ../
+make
+make install
+```
+The final binaries are in [src/GeonKick/lv2](https://github.com/ToFFmashines/binary_for_zynthian/tree/a3f04e10c481957ee0a4e2d1f868623f21f52631/src/GeonKick/lv2)
