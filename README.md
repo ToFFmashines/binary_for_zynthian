@@ -26,6 +26,8 @@ sudo cmake --install ignore/s13clang
 
 Where the files were subsequently located can be read from the [src/Surge XT/install.log](https://github.com/ToFFmashines/binary_for_zynthian/blob/main/src/Surge%20XT/install.log).
 
+I also added preset factors. You can find them in the file [surge-factory-presets.zip 19 MB](https://github.com/ToFFmashines/binary_for_zynthian/blob/main/src/Surge%20XT/surge-factory-presets.zip)
+
 ![Screenshot of GUI with Surge XT About.. screen](surge_xt_gui_01.png)
 
 ## GeonKick Installation Notes
@@ -63,3 +65,5 @@ make
 sudo make install PREFIX=/usr
 ```
 The complete contents of the [build directory are here](https://github.com/ToFFmashines/binary_for_zynthian/tree/1a9a7478aa9769e8bed4a2c8a7f24ee7c060e6fd/src/avldrums.lv2). Plus a [log from the installation](https://github.com/ToFFmashines/binary_for_zynthian/blob/1a9a7478aa9769e8bed4a2c8a7f24ee7c060e6fd/src/avldrums.lv2/install_avldrums.log).
+
+The AV Linux Drumkits is available in Oram-Bookworm-64 bit branch now.
