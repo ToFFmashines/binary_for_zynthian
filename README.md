@@ -53,6 +53,8 @@ make install
 ```
 The final binaries are in [src/GeonKick/lv2](https://github.com/ToFFmashines/binary_for_zynthian/tree/a3f04e10c481957ee0a4e2d1f868623f21f52631/src/GeonKick/lv2)
 
+New version GeonKick 3.5 (16.10.2024) are in [src/GeonKick-3.5](https://github.com/ToFFmashines/binary_for_zynthian/tree/a3f04e10c481957ee0a4e2d1f868623f21f52631/src/GeonKick-3.5). This files are instaled on Zynthian in /usr/local/lib/lv2/geonkick.lv2/geonkick.ttl . Preset are instaled in to /usr/local/share/geonkick/presets/.
+
 ## avldrums.lv2 - AVLinux Drumkits
 
 The procedure was as follows:
