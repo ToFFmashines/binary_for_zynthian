@@ -55,6 +55,9 @@ The final binaries are in [src/GeonKick/lv2](https://github.com/ToFFmashines/bin
 
 New version GeonKick 3.5 (16.10.2024) are in [src/GeonKick-3.5](src/GeonKick-3.5). This files are instaled on Zynthian in /usr/local/lib/lv2/geonkick.lv2/ directory. Preset are instaled in to /usr/local/share/geonkick/presets/.
 
+Remark for Linux compilation - library lv2-dev/stable,now 1.18.4-2 amd64 LV2 audio plugin specification - is working. The library lv2-dev from kxstudio not work -> https://github.com/Geonkick-Synthesizer/geonkick/issues/1
+
+
 ## avldrums.lv2 - AVLinux Drumkits
 
 The procedure was as follows:
