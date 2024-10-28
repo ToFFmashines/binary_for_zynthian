@@ -32,9 +32,9 @@ I also added preset factors. You can find them in the file [surge-factory-preset
 
 ## GeonKick Installation Notes
 
-First the dependencies, I removed `libjack-dev` from the recommended ones:
+First the dependencies, I removed `libjack-dev` and `libsndfile-dev` from the recommended ones (becouse Zynthian that have):
 ```
-apt-get install build-essential cmake libsndfile-dev rapidjson-dev lv2-dev libcairo2-dev
+apt-get install build-essential cmake rapidjson-dev lv2-dev libcairo2-dev
 ```
 Clone the Geonkick code repository:
 ```
@@ -51,9 +51,9 @@ cmake ../
 make
 make install
 ```
-The final binaries are in [src/GeonKick/lv2](https://github.com/ToFFmashines/binary_for_zynthian/tree/a3f04e10c481957ee0a4e2d1f868623f21f52631/src/GeonKick/lv2)
+The final binaries are in [src/GeonKick/lv2](https://github.com/ToFFmashines/binary_for_zynthian/tree/a3f04e10c481957ee0a4e2d1f868623f21f52631/src/GeonKick/lv2) for older Zynthian OS.
 
-New version GeonKick 3.5 (16.10.2024) are in [src/GeonKick-3.5](src/GeonKick-3.5). This files are instaled on Zynthian in /usr/local/lib/lv2/geonkick.lv2/ directory. Preset are instaled in to /usr/local/share/geonkick/presets/.
+New version GeonKick 3.5 (16.10.2024) are in [src/GeonKick-3.5](src/GeonKick-3.5) for Zynthian OS Oram. This files are instaled on Zynthian in /usr/local/lib/lv2/geonkick.lv2/ directory. Preset are instaled in to /usr/local/share/geonkick/presets/.
 
 Remark for Linux compilation - library lv2-dev/stable,now 1.18.4-2 amd64 LV2 audio plugin specification - is working. The library lv2-dev from kxstudio not work -> https://github.com/Geonkick-Synthesizer/geonkick/issues/1
 
